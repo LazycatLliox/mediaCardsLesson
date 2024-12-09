@@ -15,7 +15,7 @@ img {
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(3, minmax(230px, 1fr));
+    grid-template-columns: minmax(230px, 1fr);
     grid-gap: 20px;
     padding: 20px;
 }
@@ -71,3 +71,25 @@ article footer button{
 
 
 /* End All Cards Styles *******************/
+
+/****** Tablet Media Query  ****/
+@media screen and (min-width: 764px){
+        .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(230px, 1fr));
+        grid-gap: 20px;
+        padding: 20px;
+    }
+}
+/***** Desktop Media Query *******/
+
+@media screen and (min-width: 1280px) {
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(230px, 1fr));
+        grid-gap: 20px;
+        padding: 20px;
+    }
+}
+    
